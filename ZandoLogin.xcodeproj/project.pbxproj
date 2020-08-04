@@ -3,27 +3,49 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7606C34D24D870770044634B /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7606C34C24D870770044634B /* LoginController.swift */; };
 		7606D33224D7F4D400C7AE2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7606D33124D7F4D400C7AE2F /* AppDelegate.swift */; };
 		7606D33424D7F4D400C7AE2F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7606D33324D7F4D400C7AE2F /* SceneDelegate.swift */; };
-		7606D33624D7F4D400C7AE2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7606D33524D7F4D400C7AE2F /* ViewController.swift */; };
 		7606D33924D7F4D400C7AE2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7606D33724D7F4D400C7AE2F /* Main.storyboard */; };
 		7606D33B24D7F4D600C7AE2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7606D33A24D7F4D600C7AE2F /* Assets.xcassets */; };
 		7606D33E24D7F4D600C7AE2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7606D33C24D7F4D600C7AE2F /* LaunchScreen.storyboard */; };
+		7660096024D7F75B00923DC9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7660095F24D7F75B00923DC9 /* GoogleService-Info.plist */; };
+		768666BE24D8CB0F00D09F5B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768666BD24D8CB0F00D09F5B /* Extensions.swift */; };
+		768666C024D8D9DE00D09F5B /* CustomTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768666BF24D8D9DE00D09F5B /* CustomTextFields.swift */; };
+		768666C424D9879000D09F5B /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768666C324D9879000D09F5B /* CustomButton.swift */; };
+		768666C624D996C000D09F5B /* pagesConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768666C524D996C000D09F5B /* pagesConfiguration.swift */; };
+		768666C824D998BB00D09F5B /* Divider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768666C724D998BB00D09F5B /* Divider.swift */; };
+		768666CA24D9A0EA00D09F5B /* resetpasswordPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768666C924D9A0EA00D09F5B /* resetpasswordPage.swift */; };
+		76CE082A24D8B76A006C6044 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CE082924D8B76A006C6044 /* SignUpController.swift */; };
+		76CE082C24D8B77B006C6044 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CE082B24D8B77B006C6044 /* HomeController.swift */; };
+		D70630771DD0B5A27F9E6DB5 /* Pods_ZandoLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9A8D808C5FB5E89DCDDDA7E /* Pods_ZandoLogin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7606C34C24D870770044634B /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		7606D32E24D7F4D400C7AE2F /* ZandoLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZandoLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7606D33124D7F4D400C7AE2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7606D33324D7F4D400C7AE2F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7606D33524D7F4D400C7AE2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7606D33824D7F4D400C7AE2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7606D33A24D7F4D600C7AE2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7606D33D24D7F4D600C7AE2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7606D33F24D7F4D600C7AE2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7660095F24D7F75B00923DC9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		768666BD24D8CB0F00D09F5B /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = "../../../../AUTHENTIFICATION SYSTEM UI/Extensions.swift"; sourceTree = "<group>"; };
+		768666BF24D8D9DE00D09F5B /* CustomTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFields.swift; sourceTree = "<group>"; };
+		768666C324D9879000D09F5B /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		768666C524D996C000D09F5B /* pagesConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pagesConfiguration.swift; sourceTree = "<group>"; };
+		768666C724D998BB00D09F5B /* Divider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Divider.swift; sourceTree = "<group>"; };
+		768666C924D9A0EA00D09F5B /* resetpasswordPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resetpasswordPage.swift; sourceTree = "<group>"; };
+		76CE082924D8B76A006C6044 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		76CE082B24D8B77B006C6044 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		D47FEB74B130289906CA9E91 /* Pods-ZandoLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZandoLogin.debug.xcconfig"; path = "Target Support Files/Pods-ZandoLogin/Pods-ZandoLogin.debug.xcconfig"; sourceTree = "<group>"; };
+		F1D22490F9CC9D494E8F0C38 /* Pods-ZandoLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZandoLogin.release.xcconfig"; path = "Target Support Files/Pods-ZandoLogin/Pods-ZandoLogin.release.xcconfig"; sourceTree = "<group>"; };
+		F9A8D808C5FB5E89DCDDDA7E /* Pods_ZandoLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZandoLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +53,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D70630771DD0B5A27F9E6DB5 /* Pods_ZandoLogin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18F38E13DC20421697B515E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9A8D808C5FB5E89DCDDDA7E /* Pods_ZandoLogin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6702B7588C55DD52E1232FC4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D47FEB74B130289906CA9E91 /* Pods-ZandoLogin.debug.xcconfig */,
+				F1D22490F9CC9D494E8F0C38 /* Pods-ZandoLogin.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7606D32524D7F4D400C7AE2F = {
 			isa = PBXGroup;
 			children = (
 				7606D33024D7F4D400C7AE2F /* ZandoLogin */,
 				7606D32F24D7F4D400C7AE2F /* Products */,
+				6702B7588C55DD52E1232FC4 /* Pods */,
+				18F38E13DC20421697B515E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +98,64 @@
 		7606D33024D7F4D400C7AE2F /* ZandoLogin */ = {
 			isa = PBXGroup;
 			children = (
+				76CE083324D8C009006C6044 /* UTILS */,
+				76CE083224D8C001006C6044 /* API */,
+				76CE083124D8B7E3006C6044 /* Model */,
+				76CE083024D8B7DA006C6044 /* View */,
+				76CE082F24D8B7D1006C6044 /* Controller */,
 				7606D33124D7F4D400C7AE2F /* AppDelegate.swift */,
 				7606D33324D7F4D400C7AE2F /* SceneDelegate.swift */,
-				7606D33524D7F4D400C7AE2F /* ViewController.swift */,
 				7606D33724D7F4D400C7AE2F /* Main.storyboard */,
 				7606D33A24D7F4D600C7AE2F /* Assets.xcassets */,
 				7606D33C24D7F4D600C7AE2F /* LaunchScreen.storyboard */,
+				7660095F24D7F75B00923DC9 /* GoogleService-Info.plist */,
 				7606D33F24D7F4D600C7AE2F /* Info.plist */,
 			);
 			path = ZandoLogin;
+			sourceTree = "<group>";
+		};
+		76CE082F24D8B7D1006C6044 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7606C34C24D870770044634B /* LoginController.swift */,
+				76CE082B24D8B77B006C6044 /* HomeController.swift */,
+				76CE082924D8B76A006C6044 /* SignUpController.swift */,
+				768666C924D9A0EA00D09F5B /* resetpasswordPage.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		76CE083024D8B7DA006C6044 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				768666BF24D8D9DE00D09F5B /* CustomTextFields.swift */,
+				768666C324D9879000D09F5B /* CustomButton.swift */,
+				768666C524D996C000D09F5B /* pagesConfiguration.swift */,
+				768666C724D998BB00D09F5B /* Divider.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		76CE083124D8B7E3006C6044 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		76CE083224D8C001006C6044 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		76CE083324D8C009006C6044 /* UTILS */ = {
+			isa = PBXGroup;
+			children = (
+				768666BD24D8CB0F00D09F5B /* Extensions.swift */,
+			);
+			path = UTILS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +165,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7606D34224D7F4D600C7AE2F /* Build configuration list for PBXNativeTarget "ZandoLogin" */;
 			buildPhases = (
+				CB7353A7C1FFD3D9D843E197 /* [CP] Check Pods Manifest.lock */,
 				7606D32A24D7F4D400C7AE2F /* Sources */,
 				7606D32B24D7F4D400C7AE2F /* Frameworks */,
 				7606D32C24D7F4D400C7AE2F /* Resources */,
+				166B0F1F4DF9A975B9215164 /* [CP] Embed Pods Frameworks */,
+				14CB1A29EF77D4299F103097 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,20 +221,88 @@
 			files = (
 				7606D33E24D7F4D600C7AE2F /* LaunchScreen.storyboard in Resources */,
 				7606D33B24D7F4D600C7AE2F /* Assets.xcassets in Resources */,
+				7660096024D7F75B00923DC9 /* GoogleService-Info.plist in Resources */,
 				7606D33924D7F4D400C7AE2F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14CB1A29EF77D4299F103097 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZandoLogin/Pods-ZandoLogin-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZandoLogin/Pods-ZandoLogin-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZandoLogin/Pods-ZandoLogin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		166B0F1F4DF9A975B9215164 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZandoLogin/Pods-ZandoLogin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZandoLogin/Pods-ZandoLogin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZandoLogin/Pods-ZandoLogin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB7353A7C1FFD3D9D843E197 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZandoLogin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7606D32A24D7F4D400C7AE2F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7606D33624D7F4D400C7AE2F /* ViewController.swift in Sources */,
 				7606D33224D7F4D400C7AE2F /* AppDelegate.swift in Sources */,
+				768666C024D8D9DE00D09F5B /* CustomTextFields.swift in Sources */,
+				768666BE24D8CB0F00D09F5B /* Extensions.swift in Sources */,
 				7606D33424D7F4D400C7AE2F /* SceneDelegate.swift in Sources */,
+				768666C424D9879000D09F5B /* CustomButton.swift in Sources */,
+				768666C624D996C000D09F5B /* pagesConfiguration.swift in Sources */,
+				7606C34D24D870770044634B /* LoginController.swift in Sources */,
+				768666C824D998BB00D09F5B /* Divider.swift in Sources */,
+				76CE082A24D8B76A006C6044 /* SignUpController.swift in Sources */,
+				768666CA24D9A0EA00D09F5B /* resetpasswordPage.swift in Sources */,
+				76CE082C24D8B77B006C6044 /* HomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +444,7 @@
 		};
 		7606D34324D7F4D600C7AE2F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D47FEB74B130289906CA9E91 /* Pods-ZandoLogin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +463,7 @@
 		};
 		7606D34424D7F4D600C7AE2F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1D22490F9CC9D494E8F0C38 /* Pods-ZandoLogin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
