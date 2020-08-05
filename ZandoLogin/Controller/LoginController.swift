@@ -14,7 +14,6 @@ class LoginController: UIViewController
     
     
     //MARK: properties textfields
-    
     private let myimage:UIImageView =
     {
         let image = UIImageView(image: #imageLiteral(resourceName: "firebase-logo"))
@@ -22,6 +21,8 @@ class LoginController: UIViewController
         
         return image
     }()
+    
+    
     
     private let emailTextField = CustomTetxfield(Placeholder: "Email")
     private let passwordTextfield: CustomTetxfield = 
@@ -44,6 +45,7 @@ class LoginController: UIViewController
         let button = CustomButton(type: .system)
         button.setTitle("Log In", for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
+        
         button.addTarget(self, action: #selector(login), for: .touchUpInside)
         return button
     }()
@@ -70,7 +72,7 @@ class LoginController: UIViewController
     {
         let button = UIButton()
         
-        let attribut = NSMutableAttributedString(string: " SignIn with google", attributes: [.foregroundColor: UIColor(white: 1, alpha: 0.67), .font: UIFont.boldSystemFont(ofSize: 16)])
+        let attribut = NSMutableAttributedString(string: " SignIn with google", attributes: [.foregroundColor: UIColor(white: 1, alpha: 0.80), .font: UIFont.boldSystemFont(ofSize: 16)])
         
         button.setImage(#imageLiteral(resourceName: "btn_google_light_pressed_ios").withRenderingMode(.alwaysOriginal), for: .normal)
         button.setAttributedTitle( attribut, for: .normal)
@@ -84,7 +86,7 @@ class LoginController: UIViewController
     {
         let button  = UIButton(type: .system)
         
-        let attributedstring = NSMutableAttributedString(string: "you dont have an account?", attributes: [.foregroundColor: UIColor(white: 1, alpha: 0.67), .font: UIFont.boldSystemFont(ofSize: 13)])
+        let attributedstring = NSMutableAttributedString(string: "you dont have an account?", attributes: [.foregroundColor: UIColor(white: 1, alpha: 0.75), .font: UIFont.boldSystemFont(ofSize: 13)])
         
         let atrributed = NSMutableAttributedString(string: " SingUp.", attributes: [.foregroundColor: UIColor(white: 1, alpha: 0.87),.font: UIFont.boldSystemFont(ofSize: 18)])
         
@@ -114,12 +116,14 @@ class LoginController: UIViewController
     
     @objc func restpassword()
     {
-        print("Login button")
+        let controller = Resetpassword()
+        navigationController?.pushViewController(controller, animated: true)
     }
     
     @objc func SignUp()
     {
-        print("SignUPbutton pressed")
+        let controller1 = SignUpController()
+        navigationController?.pushViewController(controller1, animated: true)
     }
     
     
@@ -167,8 +171,9 @@ class LoginController: UIViewController
         mystackview.anchor(top: stackview.bottomAnchor ,left: view.leftAnchor,right: view.rightAnchor, paddingTop: 25,paddingLeft: 32,paddingRight: 32)
         
         
-        sinUpbutton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 10).isActive = true
+//        sinUpbutton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 10).isActive = true
         sinUpbutton.centerX(inView: view)
+        sinUpbutton.anchor(bottom: view.safeAreaLayoutGuide.bottomAnchor, paddingBottom: 10)
         
         
         

@@ -13,12 +13,15 @@ class CustomButton: UIButton
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        layer.cornerRadius = 25
-    
-        backgroundColor = UIColor.systemOrange.withAlphaComponent(0.9)
-        tintColor = UIColor(white: 1, alpha: 0.70)
-        setHeight(height: 80)
-        isEnabled = true
+        layer.cornerRadius = 15
+        backgroundColor = UIColor.black.withAlphaComponent(0.8)
+        tintColor = UIColor.white
+        
+        titleLabel?.adjustsFontSizeToFitWidth = true
+        titleLabel?.minimumScaleFactor = 0.5
+        setHeight(height: 70)
+        isEnabled = false
+       
     }
     
     

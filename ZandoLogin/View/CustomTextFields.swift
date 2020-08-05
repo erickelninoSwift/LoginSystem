@@ -22,7 +22,7 @@ class CustomTetxfield: UITextField
         
         clearButtonMode = .always
         borderStyle = .none
-        textColor = .white
+        textColor = UIColor.white
         layer.cornerRadius = 20
         backgroundColor = UIColor(white: 1, alpha: 0.2)
         keyboardAppearance = .dark

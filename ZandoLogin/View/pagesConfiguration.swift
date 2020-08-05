@@ -10,19 +10,24 @@ import UIKit
 
 extension UIViewController
 {
-    
+   
     func configure()
     {
+        
+        
+        
         navigationController?.navigationBar.isHidden = true
         navigationController?.navigationBar.barStyle = .black
         
         
         let gradient = CAGradientLayer()
-        gradient.colors = [UIColor.systemBlue.cgColor,UIColor.systemBlue.cgColor,UIColor.systemPurple.cgColor]
-        gradient.locations = [0,1,2]
-        view.backgroundColor = .systemBlue
+        gradient.colors = [UIColor.systemRed.cgColor,UIColor.systemRed.cgColor,UIColor.black.cgColor]
+        gradient.locations = [0,2,1]
+
         view.layer.addSublayer(gradient)
         gradient.frame = view.frame
+        
+        
         
     }
     
