@@ -19,7 +19,10 @@ class Resetpassword: UIViewController
         return image
     }()
     
-
+    var validation:Bool?
+    
+    var resttingpassword = ResetViewmodel()
+    
     //MARK: properties textfields
     
     //MARK: Textfields
@@ -38,7 +41,7 @@ class Resetpassword: UIViewController
         return button
     }()
     
-
+    
     //MARK: IIBUttons
     
     private let Restpassword: CustomButton =
@@ -54,7 +57,7 @@ class Resetpassword: UIViewController
     }()
     
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureui()
@@ -67,12 +70,12 @@ class Resetpassword: UIViewController
     {
         navigationController?.popToRootViewController(animated: true)
     }
-   
-//    @objc func login()
-//    {
-//        navigationController?.popToRootViewController(animated: true)
-//    }
-//
+    
+    //    @objc func login()
+    //    {
+    //        navigationController?.popToRootViewController(animated: true)
+    //    }
+    //
     @objc func restpassword1()
     {
         print("Login button pressed")
@@ -80,9 +83,26 @@ class Resetpassword: UIViewController
     
     @objc func emailfielddata()
     {
-        print(emailTextField.text!)
+        if let email = emailTextField.text
+        {
+           
+            resttingpassword.email = email
+            
+        }
+        result()
     }
-
+    
+    func result()
+    {
+        validation = resttingpassword.formisvalid
+        if validation == true
+        {
+            Restpassword.isEnabled = true
+        }else
+        {
+            Restpassword.isEnabled = false
+        }
+    }
     
     func configureui()
     {
@@ -103,13 +123,13 @@ class Resetpassword: UIViewController
         
         
         view.addSubview(stackview)
-//        view.addSubview(remeberpassword)
+        //        view.addSubview(remeberpassword)
         view.addSubview(backbutton)
         
         //        view.addSubview(sinUpbutton)
         stackview.anchor(top: imagetouse.bottomAnchor ,left: view.leftAnchor,right: view.rightAnchor, paddingTop: 25,paddingLeft: 32,paddingRight: 32)
         
- 
+        
         backbutton.anchor(top: view.safeAreaLayoutGuide.topAnchor, left: view.leftAnchor,paddingTop: 16, paddingLeft: 16)
         
         
