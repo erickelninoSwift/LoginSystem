@@ -20,6 +20,9 @@
 		768666C624D996C000D09F5B /* pagesConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768666C524D996C000D09F5B /* pagesConfiguration.swift */; };
 		768666C824D998BB00D09F5B /* Divider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768666C724D998BB00D09F5B /* Divider.swift */; };
 		768666CA24D9A0EA00D09F5B /* ResetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768666C924D9A0EA00D09F5B /* ResetPassword.swift */; };
+		76B75A8024DB806800DED080 /* loginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B75A7F24DB806800DED080 /* loginViewModel.swift */; };
+		76B75A8224DB80F800DED080 /* RegistrationViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B75A8124DB80F800DED080 /* RegistrationViewmodel.swift */; };
+		76B75A8424DB811100DED080 /* ResetViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B75A8324DB811100DED080 /* ResetViewmodel.swift */; };
 		76CE082A24D8B76A006C6044 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CE082924D8B76A006C6044 /* SignUpController.swift */; };
 		76CE082C24D8B77B006C6044 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CE082B24D8B77B006C6044 /* HomeController.swift */; };
 		D70630771DD0B5A27F9E6DB5 /* Pods_ZandoLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9A8D808C5FB5E89DCDDDA7E /* Pods_ZandoLogin.framework */; };
@@ -41,6 +44,9 @@
 		768666C524D996C000D09F5B /* pagesConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pagesConfiguration.swift; sourceTree = "<group>"; };
 		768666C724D998BB00D09F5B /* Divider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Divider.swift; sourceTree = "<group>"; };
 		768666C924D9A0EA00D09F5B /* ResetPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPassword.swift; sourceTree = "<group>"; };
+		76B75A7F24DB806800DED080 /* loginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewModel.swift; sourceTree = "<group>"; };
+		76B75A8124DB80F800DED080 /* RegistrationViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewmodel.swift; sourceTree = "<group>"; };
+		76B75A8324DB811100DED080 /* ResetViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetViewmodel.swift; sourceTree = "<group>"; };
 		76CE082924D8B76A006C6044 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		76CE082B24D8B77B006C6044 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		D47FEB74B130289906CA9E91 /* Pods-ZandoLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZandoLogin.debug.xcconfig"; path = "Target Support Files/Pods-ZandoLogin/Pods-ZandoLogin.debug.xcconfig"; sourceTree = "<group>"; };
@@ -139,6 +145,9 @@
 		76CE083124D8B7E3006C6044 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				76B75A7F24DB806800DED080 /* loginViewModel.swift */,
+				76B75A8124DB80F800DED080 /* RegistrationViewmodel.swift */,
+				76B75A8324DB811100DED080 /* ResetViewmodel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -292,7 +301,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76B75A8424DB811100DED080 /* ResetViewmodel.swift in Sources */,
 				7606D33224D7F4D400C7AE2F /* AppDelegate.swift in Sources */,
+				76B75A8224DB80F800DED080 /* RegistrationViewmodel.swift in Sources */,
+				76B75A8024DB806800DED080 /* loginViewModel.swift in Sources */,
 				768666C024D8D9DE00D09F5B /* CustomTextFields.swift in Sources */,
 				768666BE24D8CB0F00D09F5B /* Extensions.swift in Sources */,
 				7606D33424D7F4D400C7AE2F /* SceneDelegate.swift in Sources */,

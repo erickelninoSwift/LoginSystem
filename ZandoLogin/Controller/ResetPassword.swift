@@ -11,7 +11,6 @@ import UIKit
 
 class Resetpassword: UIViewController
 {
-    
     private let myimage:UIImageView =
     {
         let image = UIImageView(image: #imageLiteral(resourceName: "firebase-logo").withRenderingMode(UIImage.RenderingMode.alwaysOriginal))
@@ -20,7 +19,7 @@ class Resetpassword: UIViewController
         return image
     }()
     
-    
+
     //MARK: properties textfields
     
     //MARK: Textfields
@@ -39,8 +38,7 @@ class Resetpassword: UIViewController
         return button
     }()
     
-    
-    
+
     //MARK: IIBUttons
     
     private let Restpassword: CustomButton =
@@ -56,26 +54,11 @@ class Resetpassword: UIViewController
     }()
     
     
-    
-//    private let remeberpassword: UIButton =
-//    {
-//        let button =  UIButton(type: .system)
-//        button.translatesAutoresizingMaskIntoConstraints = false
-//        let attributedString = NSMutableAttributedString(string: "you remember password ?", attributes: [.foregroundColor: UIColor(white: 1, alpha: 0.87),.font:UIFont.boldSystemFont(ofSize: 14)])
-//        let attribute = NSMutableAttributedString(string: " Log In", attributes: [.foregroundColor: UIColor(white: 1, alpha: 0.87),.font: UIFont.boldSystemFont(ofSize: 18)])
-//        attributedString.append(attribute)
-//
-//        button.setAttributedTitle(attributedString, for: .normal)
-//        button.addTarget(self, action: #selector(login), for: .touchUpInside)
-//
-//        return button
-//    }()
-//
-//
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         configureui()
+        validationobserverse()
     }
     
     //MARK: functions
@@ -93,6 +76,11 @@ class Resetpassword: UIViewController
     @objc func restpassword1()
     {
         print("Login button pressed")
+    }
+    
+    @objc func emailfielddata()
+    {
+        print(emailTextField.text!)
     }
 
     
@@ -121,21 +109,15 @@ class Resetpassword: UIViewController
         //        view.addSubview(sinUpbutton)
         stackview.anchor(top: imagetouse.bottomAnchor ,left: view.leftAnchor,right: view.rightAnchor, paddingTop: 25,paddingLeft: 32,paddingRight: 32)
         
-        
-        //        sinUpbutton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 10).isActive = true
-        //        sinUpbutton.centerX(inView: view)
-        //
-        
-        
-//        remeberpassword.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 10).isActive = true
-//        remeberpassword.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
-//        remeberpassword.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
-//        
-////        backbutton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor,constant: 16).isActive = true
-//        backbutton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16).isActive = true
+ 
         backbutton.anchor(top: view.safeAreaLayoutGuide.topAnchor, left: view.leftAnchor,paddingTop: 16, paddingLeft: 16)
         
         
-        
     }
+    
+    func validationobserverse()
+    {
+        emailTextField.addTarget(self, action: #selector(emailfielddata), for: .editingChanged)
+    }
+    
 }

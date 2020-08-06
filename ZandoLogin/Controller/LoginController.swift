@@ -14,6 +14,11 @@ class LoginController: UIViewController
     
     
     //MARK: properties textfields
+    
+    var validation:Bool?
+    
+    var loginmodel = loginViewModel()
+    
     private let myimage:UIImageView =
     {
         let image = UIImageView(image: #imageLiteral(resourceName: "firebase-logo"))
@@ -104,6 +109,41 @@ class LoginController: UIViewController
     
     //MARK: selectors
     
+    @objc func emailfielddata()
+    {
+        if let email = emailTextField.text
+        {
+//            print(email)
+            loginmodel.email = email
+        
+        }
+       result()
+    }
+    
+    @objc func passwordata()
+    {
+        if let password = passwordTextfield.text
+        {
+//            print(password)
+            loginmodel.password = password
+        }
+        result()
+        
+    }
+    
+    func result()
+    {
+        validation = loginmodel.formisvalid
+        if validation == true
+        {
+            loginButton.isEnabled = true
+        }else
+        {
+            loginButton.isEnabled = false
+        }
+    }
+    
+    
     @objc func googlesignIn()
     {
         print("signIn with google")
@@ -133,6 +173,7 @@ class LoginController: UIViewController
     {
         super.viewDidLoad()
         configureUI()
+        validationobserverse()
         
     }
     
@@ -178,5 +219,11 @@ class LoginController: UIViewController
         
         
         
+    }
+    
+    func validationobserverse()
+    {
+        emailTextField.addTarget(self, action: #selector(emailfielddata), for: .editingChanged)
+        passwordTextfield.addTarget(self, action: #selector(passwordata), for: .editingChanged)
     }
 }

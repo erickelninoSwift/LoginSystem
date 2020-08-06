@@ -11,6 +11,9 @@ import UIKit
 class SignUpController: UIViewController
 {
     
+    var validation:Bool?
+    
+    var registration = RegistrationViewmodel()
     
     private let myimage:UIImageView =
     {
@@ -94,9 +97,53 @@ class SignUpController: UIViewController
     override func viewDidLoad() {
         super.viewDidLoad()
         configureui()
+        validationobserverse()
     }
     
     //MARK: functions
+    
+    @objc func fullnamedata()
+    {
+        if let fullname = fullnametextfield.text
+        {
+            registration.fullname = fullname
+        }
+        
+    }
+    @objc func emailfielddata()
+    {
+        if let email = emailTextField.text
+        {
+            //            print(email)
+            registration.email = email
+            
+        }
+        result()
+    }
+    
+    @objc func passwordata()
+    {
+        if let password = passwordTextfield.text
+        {
+            //            print(password)
+            registration.password = password
+        }
+        result()
+        
+    }
+    
+    func result()
+    {
+        validation = registration.formisvalid
+        if validation == true
+        {
+            signUPButton.isEnabled = true
+        }else
+        {
+            signUPButton.isEnabled = false
+        }
+    }
+    
     
     @objc func dimissal()
     {
@@ -154,5 +201,13 @@ class SignUpController: UIViewController
         
         
     }
+    
+    func validationobserverse()
+    {
+        fullnametextfield.addTarget(self, action: #selector(fullnamedata), for: .editingChanged)
+        emailTextField.addTarget(self, action: #selector(emailfielddata), for: .editingChanged)
+        passwordTextfield.addTarget(self, action: #selector(passwordata), for: .editingChanged)
+    }
+    
     
 }
