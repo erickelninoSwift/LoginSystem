@@ -15,6 +15,7 @@ class LoginController: UIViewController
     
     //MARK: properties textfields
     
+    var services = Services()
     var validation:Bool?
     
     var loginmodel = loginViewModel()
@@ -30,6 +31,7 @@ class LoginController: UIViewController
     
     
     private let emailTextField = CustomTetxfield(Placeholder: "Email")
+    
     private let passwordTextfield: CustomTetxfield = 
     {
         let textfield = CustomTetxfield(Placeholder: "Password")
@@ -113,18 +115,18 @@ class LoginController: UIViewController
     {
         if let email = emailTextField.text
         {
-//            print(email)
+            //            print(email)
             loginmodel.email = email
-        
+            
         }
-       result()
+        result()
     }
     
     @objc func passwordata()
     {
         if let password = passwordTextfield.text
         {
-//            print(password)
+            //            print(password)
             loginmodel.password = password
         }
         result()
@@ -151,9 +153,25 @@ class LoginController: UIViewController
     
     @objc func login()
     {
-        print("Login button")
+            if let emailadrres = emailTextField.text
+            {
+                if let passwordmac11 = passwordTextfield.text
+                {
+                    services.Authtentification(email: emailadrres, passwordelnino: passwordmac11) { (result, error) in
+                        if error != nil
+                        {
+                            print("DEBUG: error while SignIn In \(error?.localizedDescription ?? "loggin error")")
+                            
+                        }else
+                        {
+                            let controller = HomeController()
+                            self.navigationController?.pushViewController(controller, animated: true)
+                            print("you have logged in successfully")
+                        }
+                    }
+                }
+            }
     }
-    
     @objc func restpassword()
     {
         let controller = Resetpassword()
@@ -165,8 +183,6 @@ class LoginController: UIViewController
         let controller1 = SignUpController()
         navigationController?.pushViewController(controller1, animated: true)
     }
-    
-    
     
     
     override func viewDidLoad()
@@ -212,7 +228,7 @@ class LoginController: UIViewController
         mystackview.anchor(top: stackview.bottomAnchor ,left: view.leftAnchor,right: view.rightAnchor, paddingTop: 25,paddingLeft: 32,paddingRight: 32)
         
         
-//        sinUpbutton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 10).isActive = true
+        //        sinUpbutton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 10).isActive = true
         sinUpbutton.centerX(inView: view)
         sinUpbutton.anchor(bottom: view.safeAreaLayoutGuide.bottomAnchor, paddingBottom: 10)
         
@@ -227,3 +243,4 @@ class LoginController: UIViewController
         passwordTextfield.addTarget(self, action: #selector(passwordata), for: .editingChanged)
     }
 }
+

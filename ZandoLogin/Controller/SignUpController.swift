@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import Firebase
 
 class SignUpController: UIViewController
 {
     
     var validation:Bool?
     
+    var services = Services()
     var registration = RegistrationViewmodel()
     
     private let myimage:UIImageView =
@@ -152,15 +154,31 @@ class SignUpController: UIViewController
     
     @objc func signUp()
     {
-        print("signUP button pressed")
-        
+       
+            if let emailadrres = emailTextField.text
+            {
+                if let password = passwordTextfield.text
+                {
+                    services.registeruser(email: emailadrres, password: password) { (result, error) in
+                        if error != nil
+                        {
+                            print("DEBUG: error \(error?.localizedDescription ?? "register error")")
+                        }else
+                        {
+                            let controller = HomeController()
+                            self.navigationController?.pushViewController(controller, animated: true)
+                            print("You have logged in successfully")
+                        }
+                    }
+                }
+            }
+           
     }
     
     @objc func login()
     {
         navigationController?.popToRootViewController(animated: true)
     }
-    
     
     func configureui()
     {

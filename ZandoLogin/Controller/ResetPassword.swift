@@ -7,10 +7,12 @@
 //
 
 import UIKit
-
+import Firebase
 
 class Resetpassword: UIViewController
 {
+    
+    var services = Services()
     private let myimage:UIImageView =
     {
         let image = UIImageView(image: #imageLiteral(resourceName: "firebase-logo").withRenderingMode(UIImage.RenderingMode.alwaysOriginal))
@@ -78,7 +80,19 @@ class Resetpassword: UIViewController
     //
     @objc func restpassword1()
     {
-        print("Login button pressed")
+        if let emailaddress =  emailTextField.text
+        {
+            services.restpassword(email: emailaddress) { (error) in
+                if error != nil
+                {
+                    print("DEBUG: error \(error?.localizedDescription ?? "Rest password error")")
+                }else
+                {
+                    print("You can check your email for the rest password link")
+                    self.navigationController?.popViewController(animated: true)
+                }
+            }
+        }
     }
     
     @objc func emailfielddata()
